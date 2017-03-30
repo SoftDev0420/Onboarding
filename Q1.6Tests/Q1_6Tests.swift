@@ -2,7 +2,7 @@
 //  Q1_6Tests.swift
 //  Q1.6Tests
 //
-//  Created by SoftDev on 3/29/17.
+//  Created by SoftDev on 3/30/17.
 //  Copyright © 2017 SoftDev. All rights reserved.
 //
 
@@ -28,7 +28,7 @@ class Q1_6Tests: XCTestCase {
     
     func testPerformanceExample() {
         // This is an example of a performance test case.
-        self.measure {
+        self.measureBlock {
             // Put the code you want to measure the time of here.
         }
     }
