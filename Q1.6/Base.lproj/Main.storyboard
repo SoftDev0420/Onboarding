@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
@@ -26,7 +26,7 @@
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zaK-vH-SHS">
-                                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="1500" height="667"/>
                                                 <subviews>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZTg-zM-zLX">
                                                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
@@ -137,8 +137,11 @@ notifications</string>
                                                                         <integer key="value" value="20"/>
                                                                     </userDefinedRuntimeAttribute>
                                                                 </userDefinedRuntimeAttributes>
+                                                                <connections>
+                                                                    <action selector="onNotification:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RS3-sZ-IPt"/>
+                                                                </connections>
                                                             </button>
-                                                            <button opaque="NO" alpha="0.71999999999999997" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IaQ-2D-5WR">
+                                                            <button opaque="NO" alpha="0.71999999999999997" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IaQ-2D-5WR">
                                                                 <rect key="frame" x="31" y="623" width="312" height="40"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="40" id="Bi5-Ri-22f"/>
@@ -147,6 +150,9 @@ notifications</string>
                                                                 <state key="normal" title="Rather not">
                                                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                                 </state>
+                                                                <connections>
+                                                                    <action selector="onNext:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HSp-7y-m7M"/>
+                                                                </connections>
                                                             </button>
                                                         </subviews>
                                                         <color key="backgroundColor" red="0.4549019608" green="0.70196078429999997" blue="0.82352941180000006" alpha="1" colorSpace="calibratedRGB"/>
@@ -170,7 +176,7 @@ notifications</string>
                                                     </view>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KN0-9y-mC7">
                                                         <rect key="frame" x="750" y="0.0" width="375" height="667"/>
-                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <color key="backgroundColor" red="0.4549019608" green="0.70196078429999997" blue="0.82352941180000006" alpha="1" colorSpace="calibratedRGB"/>
                                                     </view>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9ba-m9-Thh">
                                                         <rect key="frame" x="1125" y="0.0" width="375" height="667"/>
@@ -191,9 +197,9 @@ notifications</string>
                                                     <constraint firstItem="KN0-9y-mC7" firstAttribute="width" secondItem="ZTg-zM-zLX" secondAttribute="width" id="ThW-VS-pCd"/>
                                                     <constraint firstItem="9ba-m9-Thh" firstAttribute="top" secondItem="zaK-vH-SHS" secondAttribute="top" id="cC1-Ef-6Gu"/>
                                                     <constraint firstItem="ZTg-zM-zLX" firstAttribute="height" secondItem="zaK-vH-SHS" secondAttribute="height" id="fSx-Bh-IOv"/>
-                                                    <constraint firstAttribute="trailing" secondItem="ZTg-zM-zLX" secondAttribute="trailing" id="gIV-oh-sjV"/>
                                                     <constraint firstItem="9ba-m9-Thh" firstAttribute="width" secondItem="ZTg-zM-zLX" secondAttribute="width" id="kTf-aJ-EnY"/>
                                                     <constraint firstItem="KN0-9y-mC7" firstAttribute="top" secondItem="zaK-vH-SHS" secondAttribute="top" id="o3I-Qx-Kgo"/>
+                                                    <constraint firstAttribute="trailing" secondItem="9ba-m9-Thh" secondAttribute="trailing" id="pOv-0c-gel"/>
                                                     <constraint firstItem="m4T-xV-2Sz" firstAttribute="width" secondItem="ZTg-zM-zLX" secondAttribute="width" id="wb2-GO-wwr"/>
                                                 </constraints>
                                             </view>
