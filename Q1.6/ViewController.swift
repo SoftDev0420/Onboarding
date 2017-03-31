@@ -50,20 +50,12 @@ class ViewController: UIViewController {
     }
 
     @IBAction func onNotification(sender: UIButton) {
+        let settings = UIUserNotificationSettings(forTypes: .Alert, categories: nil)
+        UIApplication.sharedApplication().registerUserNotificationSettings(settings)
+        UIApplication.sharedApplication().registerForRemoteNotifications()
         
-        let alertController = UIAlertController(title: "'Questions' would like to send you notifications", message: "Notifications may include alerts, sounds, and icon badges. These can be configured in Settings", preferredStyle: .Alert)
         
-        let cancelAction = UIAlertAction(title: "Cancel", style: .Cancel) { (action:UIAlertAction!) in
-            print("you have pressed the Cancel button");
-        }
-        alertController.addAction(cancelAction)
-        
-        let OKAction = UIAlertAction(title: "OK", style: .Default) { (action:UIAlertAction!) in
-            print("you have pressed OK button");
-        }
-        alertController.addAction(OKAction)
-        
-        self.presentViewController(alertController, animated: true, completion:nil)
+        mainScrollView.setContentOffset(CGPoint(x: screenWidth * 2, y: 0), animated: true)
     }
 }
 
