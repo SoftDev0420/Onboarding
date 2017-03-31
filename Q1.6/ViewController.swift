@@ -30,15 +30,15 @@ class ViewController: UIViewController {
     
 
     @IBAction func onNext(sender: UIButton) {
-//        let index = sender.tag
-//        
-//        switch index {
-//        case 0:
-//            mainScrollView.setContentOffset(CGPoint(x: screenWidth, y: 0), animated: true)
-//            break
-//        default:
-//            break
-//        }
+        let index = sender.tag
+        
+        switch index {
+        case 0:
+            mainScrollView.setContentOffset(CGPoint(x: screenWidth, y: 0), animated: true)
+            break
+        default:
+            break
+        }
     }
 }
 

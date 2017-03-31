@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
@@ -95,7 +95,73 @@ answer questions</string>
                                                     </view>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="m4T-xV-2Sz">
                                                         <rect key="frame" x="375" y="0.0" width="375" height="667"/>
+                                                        <subviews>
+                                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="NotificationImage" translatesAutoresizingMaskIntoConstraints="NO" id="N9e-G1-kxY">
+                                                                <rect key="frame" x="99" y="85" width="177" height="177"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" secondItem="N9e-G1-kxY" secondAttribute="height" multiplier="1:1" id="mzE-QW-E0i"/>
+                                                                </constraints>
+                                                            </imageView>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Get questions through notifications" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HDx-Zt-Ne9">
+                                                                <rect key="frame" x="32" y="302" width="310" height="55"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                                <nil key="highlightedColor"/>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="adjustsFontSizeToFitWidth" value="YES"/>
+                                                                </userDefinedRuntimeAttributes>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.69999999999999996" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="To make sure you never miss a                                        question, please allow notifications" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MnK-TK-FxR">
+                                                                <rect key="frame" x="31" y="390" width="312" height="41"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                                <nil key="highlightedColor"/>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="adjustsFontSizeToFitWidth" value="YES"/>
+                                                                </userDefinedRuntimeAttributes>
+                                                            </label>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KWI-2G-itO">
+                                                                <rect key="frame" x="31" y="568" width="312" height="40"/>
+                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="40" id="TGy-1g-fs1"/>
+                                                                </constraints>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                <state key="normal" title="Allow notifications">
+                                                                    <color key="titleColor" red="0.4549019608" green="0.70196078429999997" blue="0.82352941180000006" alpha="1" colorSpace="calibratedRGB"/>
+                                                                </state>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                        <integer key="value" value="20"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                            </button>
+                                                            <button opaque="NO" alpha="0.71999999999999997" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IaQ-2D-5WR">
+                                                                <rect key="frame" x="31" y="623" width="312" height="29"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                <state key="normal" title="Rather not">
+                                                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                                </state>
+                                                            </button>
+                                                        </subviews>
                                                         <color key="backgroundColor" red="0.4549019608" green="0.70196078429999997" blue="0.82352941180000006" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <constraints>
+                                                            <constraint firstItem="MnK-TK-FxR" firstAttribute="centerX" secondItem="m4T-xV-2Sz" secondAttribute="centerX" id="3PI-In-Gc8"/>
+                                                            <constraint firstItem="HDx-Zt-Ne9" firstAttribute="top" secondItem="m4T-xV-2Sz" secondAttribute="bottom" multiplier="0.453" id="76q-S7-9wR"/>
+                                                            <constraint firstItem="N9e-G1-kxY" firstAttribute="centerX" secondItem="m4T-xV-2Sz" secondAttribute="centerX" id="8aT-JJ-uf7"/>
+                                                            <constraint firstItem="KWI-2G-itO" firstAttribute="width" secondItem="m4T-xV-2Sz" secondAttribute="width" multiplier="0.833" id="8lz-WI-Ukc"/>
+                                                            <constraint firstItem="IaQ-2D-5WR" firstAttribute="centerX" secondItem="m4T-xV-2Sz" secondAttribute="centerX" id="NT2-N7-hXL"/>
+                                                            <constraint firstItem="N9e-G1-kxY" firstAttribute="top" secondItem="m4T-xV-2Sz" secondAttribute="bottom" multiplier="0.127" id="O3W-tc-AUX"/>
+                                                            <constraint firstItem="HDx-Zt-Ne9" firstAttribute="centerX" secondItem="m4T-xV-2Sz" secondAttribute="centerX" id="Pbd-d4-Kny"/>
+                                                            <constraint firstItem="MnK-TK-FxR" firstAttribute="top" secondItem="m4T-xV-2Sz" secondAttribute="bottom" multiplier="0.584" id="Rgp-GM-J34"/>
+                                                            <constraint firstItem="IaQ-2D-5WR" firstAttribute="width" secondItem="m4T-xV-2Sz" secondAttribute="width" multiplier="0.833" id="V9l-f3-X6K"/>
+                                                            <constraint firstItem="IaQ-2D-5WR" firstAttribute="bottom" secondItem="m4T-xV-2Sz" secondAttribute="bottom" constant="-15" id="XN0-Qs-nca"/>
+                                                            <constraint firstItem="MnK-TK-FxR" firstAttribute="width" secondItem="m4T-xV-2Sz" secondAttribute="width" multiplier="0.833" id="Xki-of-Nub"/>
+                                                            <constraint firstItem="HDx-Zt-Ne9" firstAttribute="width" secondItem="m4T-xV-2Sz" secondAttribute="width" multiplier="0.829" id="ZGk-hW-jve"/>
+                                                            <constraint firstItem="KWI-2G-itO" firstAttribute="centerX" secondItem="m4T-xV-2Sz" secondAttribute="centerX" id="gmm-1e-hjv"/>
+                                                            <constraint firstItem="N9e-G1-kxY" firstAttribute="height" secondItem="m4T-xV-2Sz" secondAttribute="height" multiplier="0.266" id="h7K-cl-VMx"/>
+                                                            <constraint firstItem="KWI-2G-itO" firstAttribute="bottom" secondItem="IaQ-2D-5WR" secondAttribute="top" constant="-15" id="lV7-XX-JCt"/>
+                                                        </constraints>
                                                     </view>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KN0-9y-mC7">
                                                         <rect key="frame" x="750" y="0.0" width="375" height="667"/>
@@ -167,5 +233,6 @@ answer questions</string>
     </scenes>
     <resources>
         <image name="LogoImage" width="151" height="151"/>
+        <image name="NotificationImage" width="182" height="182"/>
     </resources>
 </document>
