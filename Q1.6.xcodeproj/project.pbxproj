@@ -488,6 +488,7 @@
 				333FC4691E8D675C0041D383 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		333FC46A1E8D675C0041D383 /* Build configuration list for PBXNativeTarget "Q1.6Tests" */ = {
 			isa = XCConfigurationList;
@@ -496,6 +497,7 @@
 				333FC46C1E8D675C0041D383 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		333FC46D1E8D675C0041D383 /* Build configuration list for PBXNativeTarget "Q1.6UITests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +506,7 @@
 				333FC46F1E8D675C0041D383 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
