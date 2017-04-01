@@ -27,7 +27,7 @@ class ViewController: UIViewController, UITextFieldDelegate, UIGestureRecognizer
         
         codeTextField.layer.cornerRadius = 20.0
         codeTextField.layer.borderWidth = 1.0
-        codeTextField.layer.borderColor = UIColor.grayColor().CGColor
+        codeTextField.layer.borderColor = UIColorFromHex(0xd8d8d8, alpha: 1.0).CGColor
         
         let paddingView = UIView(frame: CGRectMake(0, 0, 15, self.codeTextField.frame.height))
         codeTextField.leftView = paddingView
@@ -68,13 +68,13 @@ class ViewController: UIViewController, UITextFieldDelegate, UIGestureRecognizer
             mainScrollView.setContentOffset(CGPoint(x: screenWidth * 2, y: 0), animated: true)
             break
         case 2:
-            if(checkValidateCode() == true) {
+            if checkValidateCode() == true {
                 mainScrollView.setContentOffset(CGPoint(x: screenWidth * 3, y: 0), animated: true)
             }
             else {
                 print("InValid")
                 codeTextField.layer.borderColor = UIColorFromHex(0xd0011b, alpha: 1.0).CGColor
-                codeTextField.textColor = UIColorFromHex(0xd0011b)
+                codeTextField.textColor = UIColorFromHex(0xd0011b, alpha: 1.0)
                 invalidateLabel.hidden = false
             }
             break
@@ -108,7 +108,7 @@ class ViewController: UIViewController, UITextFieldDelegate, UIGestureRecognizer
         print(code! % 97)
         
         if(numCode != nil) {
-            if(code! % 97 == numCode!) {
+            if code! % 97 == numCode! {
                 return true
             }
         }
@@ -124,6 +124,13 @@ class ViewController: UIViewController, UITextFieldDelegate, UIGestureRecognizer
         return UIColor(red:red, green:green, blue:blue, alpha:CGFloat(alpha))
     }
     
+    func textFieldDidBeginEditing(textField: UITextField) {
+        if textField.tag == 1 {
+            self.codeTextField.layer.borderColor = UIColorFromHex(0xd8d8d8, alpha: 1.0).CGColor
+            self.codeTextField.textColor = UIColorFromHex(0xd8d8d8, alpha: 1.0)
+            invalidateLabel.hidden = true
+        }
+    }
     
     func textFieldShouldReturn(textField: UITextField) -> Bool {
         codeTextField.resignFirstResponder()
