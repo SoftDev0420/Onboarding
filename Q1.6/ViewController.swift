@@ -92,9 +92,10 @@ class ViewController: UIViewController, UITextFieldDelegate, UIGestureRecognizer
     
     func checkValidateCode() -> Bool {
         let txtCode = (codeTextField.text!).stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceCharacterSet())
-        if (txtCode.characters.count < 2) {
+        if (txtCode.characters.count < 3) {
             return false
         }
+        
         let numCode = Int(txtCode.substringFromIndex(txtCode.endIndex.advancedBy(-2)))
         let charCode = String(txtCode.characters.dropLast(2)).lowercaseString
 
