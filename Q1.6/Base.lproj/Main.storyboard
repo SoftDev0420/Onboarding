@@ -201,7 +201,7 @@ notifications</string>
                                                                 </userDefinedRuntimeAttributes>
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" alpha="0.69999999999999996" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This is the code they gave to you" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wzx-ic-VyA">
-                                                                <rect key="frame" x="31" y="198" width="314" height="18"/>
+                                                                <rect key="frame" x="31" y="198" width="312" height="18"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                                 <nil key="highlightedColor"/>
@@ -209,7 +209,7 @@ notifications</string>
                                                                     <userDefinedRuntimeAttribute type="boolean" keyPath="adjustsFontSizeToFitWidth" value="YES"/>
                                                                 </userDefinedRuntimeAttributes>
                                                             </label>
-                                                            <textField opaque="NO" clipsSubviews="YES" alpha="0.69999999999999996" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Unique ID" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kSO-kG-A7e">
+                                                            <textField opaque="NO" clipsSubviews="YES" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Unique ID" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kSO-kG-A7e">
                                                                 <rect key="frame" x="31" y="255" width="312" height="48"/>
                                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                                 <constraints>
@@ -224,11 +224,14 @@ notifications</string>
                                                                     </userDefinedRuntimeAttribute>
                                                                 </userDefinedRuntimeAttributes>
                                                             </textField>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="The activation code you provided is not correct" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bDT-40-1yK">
-                                                                <rect key="frame" x="31" y="298" width="312" height="17"/>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The activation code you provided is not correct" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bDT-40-1yK">
+                                                                <rect key="frame" x="31" y="313" width="312" height="17"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                 <color key="textColor" red="0.81568627450980391" green="0.0039215686274509803" blue="0.10588235294117647" alpha="1" colorSpace="calibratedRGB"/>
                                                                 <nil key="highlightedColor"/>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="adjustsFontSizeToFitWidth" value="YES"/>
+                                                                </userDefinedRuntimeAttributes>
                                                             </label>
                                                             <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q04-il-QfN">
                                                                 <rect key="frame" x="31" y="596" width="312" height="40"/>
@@ -255,7 +258,11 @@ notifications</string>
                                                             <constraint firstItem="q04-il-QfN" firstAttribute="bottom" secondItem="KN0-9y-mC7" secondAttribute="bottom" multiplier="0.953" id="CZ1-MB-17f"/>
                                                             <constraint firstItem="G75-IC-98N" firstAttribute="width" secondItem="KN0-9y-mC7" secondAttribute="width" multiplier="0.444" id="DlS-Su-LSa"/>
                                                             <constraint firstItem="Wzx-ic-VyA" firstAttribute="top" secondItem="KN0-9y-mC7" secondAttribute="bottom" multiplier="0.297" id="Foq-mI-Xk1"/>
-                                                            <constraint firstItem="Wzx-ic-VyA" firstAttribute="width" secondItem="KN0-9y-mC7" secondAttribute="width" multiplier="0.836" id="HoD-dN-4I5"/>
+                                                            <constraint firstItem="Wzx-ic-VyA" firstAttribute="width" secondItem="KN0-9y-mC7" secondAttribute="width" multiplier="0.833" id="HoD-dN-4I5">
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="keyPath" value="YES"/>
+                                                                </userDefinedRuntimeAttributes>
+                                                            </constraint>
                                                             <constraint firstItem="f2N-OP-Y7N" firstAttribute="leading" secondItem="KN0-9y-mC7" secondAttribute="trailing" multiplier="0.083" id="JWb-Aa-g5d"/>
                                                             <constraint firstItem="kSO-kG-A7e" firstAttribute="centerX" secondItem="KN0-9y-mC7" secondAttribute="centerX" id="NYp-LW-bIs"/>
                                                             <constraint firstItem="q04-il-QfN" firstAttribute="centerX" secondItem="KN0-9y-mC7" secondAttribute="centerX" id="Ng2-h2-Md1"/>
