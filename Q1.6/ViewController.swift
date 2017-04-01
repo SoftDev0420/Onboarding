@@ -25,7 +25,7 @@ class ViewController: UIViewController, UITextFieldDelegate, UIGestureRecognizer
         let delegate:AppDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
         delegate.vc = self
         
-        codeTextField.layer.cornerRadius = 20.0
+        codeTextField.layer.cornerRadius = 24.0
         codeTextField.layer.borderWidth = 1.0
         codeTextField.layer.borderColor = UIColorFromHex(0xd8d8d8, alpha: 1.0).CGColor
         
@@ -91,12 +91,11 @@ class ViewController: UIViewController, UITextFieldDelegate, UIGestureRecognizer
     }
     
     func checkValidateCode() -> Bool {
-        
-        if codeTextField.text == "" {
+        let txtCode = (codeTextField.text!).stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceCharacterSet())
+        if (txtCode.characters.count < 3) {
             return false
         }
         
-        let txtCode = (codeTextField.text!).stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceCharacterSet())
         let numCode = Int(txtCode.substringFromIndex(txtCode.endIndex.advancedBy(-2)))
         let charCode = String(txtCode.characters.dropLast(2)).lowercaseString
 
