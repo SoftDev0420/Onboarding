@@ -13,7 +13,7 @@ import CoreData
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-    var vc: ViewController?
+    var vc: NotificationSettingViewController?
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
@@ -29,12 +29,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             NSLog("user allowed notifications")
             //[[UIApplication sharedApplicatfvion] registerForRemoteNotifications]
             
-            vc!.mainScrollView.setContentOffset(CGPoint(x: vc!.screenWidth * 2, y: 0), animated: true)
+            vc!.goToNextPage()
             
         }else{
             NSLog("user did not allow notifications")
             // show alert here
-            vc!.mainScrollView.setContentOffset(CGPoint(x: vc!.screenWidth * 2, y: 0), animated: true)
+            vc!.goToNextPage()
         }
     }
     
