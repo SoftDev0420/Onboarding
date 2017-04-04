@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="9j5-72-swT">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="9j5-72-swT">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
@@ -408,7 +408,7 @@ notifications</string>
                                         </connections>
                                     </button>
                                     <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T0o-on-YHJ" customClass="FRHyperLabel">
-                                        <rect key="frame" x="63" y="367" width="281" height="0.0"/>
+                                        <rect key="frame" x="63" y="362" width="281" height="0.0"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
@@ -417,7 +417,7 @@ notifications</string>
                                         </userDefinedRuntimeAttributes>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fxg-W5-Juu">
-                                        <rect key="frame" x="63" y="363" width="281" height="34"/>
+                                        <rect key="frame" x="63" y="358" width="281" height="34"/>
                                         <string key="text">You have to agree to the terms of service to 
 continue</string>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -438,7 +438,7 @@ continue</string>
                                         </connections>
                                     </button>
                                     <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="so2-Kz-CNH" customClass="FRHyperLabel">
-                                        <rect key="frame" x="63" y="454" width="281" height="0.0"/>
+                                        <rect key="frame" x="63" y="449" width="281" height="0.0"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
@@ -447,7 +447,7 @@ continue</string>
                                         </userDefinedRuntimeAttributes>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dh5-8h-aDq">
-                                        <rect key="frame" x="63" y="450" width="281" height="34"/>
+                                        <rect key="frame" x="63" y="445" width="263" height="34"/>
                                         <string key="text">You have to agree to the privacy policy to 
 continue</string>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -510,7 +510,7 @@ continue</string>
                                     <constraint firstItem="Fxg-W5-Juu" firstAttribute="width" secondItem="kAT-eo-nlQ" secondAttribute="width" multiplier="0.75" id="R5o-5T-m5f"/>
                                     <constraint firstItem="dcr-ks-Q2a" firstAttribute="top" secondItem="kAT-eo-nlQ" secondAttribute="bottom" multiplier="0.206" id="RRf-h4-Jek"/>
                                     <constraint firstItem="24q-NG-21B" firstAttribute="top" secondItem="kAT-eo-nlQ" secondAttribute="bottom" multiplier="0.156" id="SIu-ZG-clL"/>
-                                    <constraint firstItem="so2-Kz-CNH" firstAttribute="top" secondItem="kAT-eo-nlQ" secondAttribute="bottom" multiplier="0.681" id="TOO-LX-JJ6"/>
+                                    <constraint firstItem="so2-Kz-CNH" firstAttribute="top" secondItem="kAT-eo-nlQ" secondAttribute="bottom" multiplier="0.673" id="TOO-LX-JJ6"/>
                                     <constraint firstItem="xsM-pd-iqf" firstAttribute="leading" secondItem="kAT-eo-nlQ" secondAttribute="trailing" multiplier="0.083" id="UFS-hm-HAb"/>
                                     <constraint firstItem="hYS-9i-VhP" firstAttribute="centerX" secondItem="kAT-eo-nlQ" secondAttribute="centerX" id="Up9-sJ-LM8"/>
                                     <constraint firstItem="Y7b-HT-hfS" firstAttribute="bottom" secondItem="kAT-eo-nlQ" secondAttribute="bottom" multiplier="0.994" id="UpF-Wp-NIJ"/>
@@ -525,9 +525,9 @@ continue</string>
                                     <constraint firstItem="Fxg-W5-Juu" firstAttribute="top" secondItem="T0o-on-YHJ" secondAttribute="bottom" constant="-4" id="sIN-8z-dBm"/>
                                     <constraint firstItem="xsM-pd-iqf" firstAttribute="height" secondItem="kAT-eo-nlQ" secondAttribute="height" multiplier="0.031" id="sb3-aK-dMZ"/>
                                     <constraint firstItem="r4f-e6-XP0" firstAttribute="height" secondItem="kAT-eo-nlQ" secondAttribute="height" multiplier="0.031" id="teu-EJ-ECy"/>
-                                    <constraint firstItem="T0o-on-YHJ" firstAttribute="top" secondItem="kAT-eo-nlQ" secondAttribute="bottom" multiplier="0.55" id="ubj-em-szy"/>
+                                    <constraint firstItem="T0o-on-YHJ" firstAttribute="top" secondItem="kAT-eo-nlQ" secondAttribute="bottom" multiplier="0.542" id="ubj-em-szy"/>
                                     <constraint firstItem="so2-Kz-CNH" firstAttribute="width" secondItem="kAT-eo-nlQ" secondAttribute="width" multiplier="0.75" id="zRD-aC-OLs"/>
-                                    <constraint firstItem="dh5-8h-aDq" firstAttribute="width" secondItem="kAT-eo-nlQ" secondAttribute="width" multiplier="0.75" id="zyz-jd-Fah"/>
+                                    <constraint firstItem="dh5-8h-aDq" firstAttribute="width" secondItem="kAT-eo-nlQ" secondAttribute="width" multiplier="0.7" id="zyz-jd-Fah"/>
                                 </constraints>
                             </view>
                         </subviews>
