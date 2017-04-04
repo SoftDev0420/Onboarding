@@ -18,12 +18,13 @@ class CodeValidationViewController: UIViewController, UITextFieldDelegate, UIGes
 
         // Do any additional setup after loading the view.
         
-        codeTextField.layer.borderColor = UIColor(red: 216.0 / 255, green: 216.0 / 255, blue: 216.0 / 255, alpha: 1.0).CGColor
+        codeTextField.layer.borderColor = UIColor(red: 133.0 / 255, green: 133.0 / 255, blue: 133.0 / 255, alpha: 0.7).CGColor
         codeTextField.layer.borderWidth = 1.0
         
         let paddingView = UIView(frame: CGRectMake(0, 0, 15, self.codeTextField.frame.height))
         codeTextField.leftView = paddingView
         codeTextField.leftViewMode = UITextFieldViewMode.Always
+        codeTextField.autocapitalizationType = .AllCharacters
         
         let tap = UITapGestureRecognizer(target: self, action: Selector("hideKeyboard"))
         tap.delegate = self
@@ -35,6 +36,9 @@ class CodeValidationViewController: UIViewController, UITextFieldDelegate, UIGes
         // Dispose of any resources that can be recreated.
     }
     
+    override func preferredStatusBarStyle() -> UIStatusBarStyle {
+        return .Default
+    }
 
     /*
     // MARK: - Navigation
@@ -49,13 +53,14 @@ class CodeValidationViewController: UIViewController, UITextFieldDelegate, UIGes
     ////////////////////////////////
     
     func textFieldDidBeginEditing(textField: UITextField) {
-        codeTextField.layer.borderColor = UIColor(red: 216.0 / 255, green: 216.0 / 255, blue: 216.0 / 255, alpha: 1.0).CGColor
-        codeTextField.textColor = UIColor(red: 216.0 / 255, green: 216.0 / 255, blue: 216.0 / 255, alpha: 1.0)
+        codeTextField.layer.borderColor = UIColor(red: 133.0 / 255, green: 133.0 / 255, blue: 133.0 / 255, alpha: 0.7).CGColor
+        codeTextField.textColor = UIColor(red: 133.0 / 255, green: 133.0 / 255, blue: 133.0 / 255, alpha: 0.7)
         invalidateLabel.hidden = true
     }
     
     func textFieldShouldReturn(textField: UITextField) -> Bool {
         codeTextField.resignFirstResponder()
+        moveToNextPage()
         return true
     }
     
@@ -66,6 +71,10 @@ class CodeValidationViewController: UIViewController, UITextFieldDelegate, UIGes
     ////////////////////////////////
 
     @IBAction func onNext(sender: UIButton) {
+        moveToNextPage()
+    }
+    
+    func moveToNextPage() {
         if (checkValidateCode()) {
             let policyViewController = storyboard!.instantiateViewControllerWithIdentifier("PolicyViewController")
             navigationController!.pushViewController(policyViewController, animated: true)

@@ -17,6 +17,7 @@
 		33597B6C1E9248FE005C4785 /* NotificationSettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33597B6B1E9248FE005C4785 /* NotificationSettingViewController.swift */; };
 		33597B6E1E924BA3005C4785 /* CodeValidationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33597B6D1E924BA3005C4785 /* CodeValidationViewController.swift */; };
 		33597B701E92568F005C4785 /* PolicyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33597B6F1E92568F005C4785 /* PolicyViewController.swift */; };
+		3385B70E1E93913F004B8446 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3385B70D1E93913F004B8446 /* WelcomeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		33597B6B1E9248FE005C4785 /* NotificationSettingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationSettingViewController.swift; sourceTree = "<group>"; };
 		33597B6D1E924BA3005C4785 /* CodeValidationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CodeValidationViewController.swift; sourceTree = "<group>"; };
 		33597B6F1E92568F005C4785 /* PolicyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PolicyViewController.swift; sourceTree = "<group>"; };
+		3385B70D1E93913F004B8446 /* WelcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +106,7 @@
 			isa = PBXGroup;
 			children = (
 				333FC43F1E8D675B0041D383 /* AppDelegate.swift */,
+				3385B70D1E93913F004B8446 /* WelcomeViewController.swift */,
 				33597B6B1E9248FE005C4785 /* NotificationSettingViewController.swift */,
 				33597B6D1E924BA3005C4785 /* CodeValidationViewController.swift */,
 				33597B6F1E92568F005C4785 /* PolicyViewController.swift */,
@@ -268,6 +271,7 @@
 				333FC4481E8D675B0041D383 /* Q1_6.xcdatamodeld in Sources */,
 				33597B6C1E9248FE005C4785 /* NotificationSettingViewController.swift in Sources */,
 				33597B701E92568F005C4785 /* PolicyViewController.swift in Sources */,
+				3385B70E1E93913F004B8446 /* WelcomeViewController.swift in Sources */,
 				33597B6E1E924BA3005C4785 /* CodeValidationViewController.swift in Sources */,
 				333FC4401E8D675B0041D383 /* AppDelegate.swift in Sources */,
 			);
