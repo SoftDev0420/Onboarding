@@ -26,14 +26,10 @@ class PolicyViewController: UIViewController {
 
         // Do any additional setup after loading the view.
         
-        checkboxBtn1.setBackgroundImage(UIImage(named: "checkbox0"), forState: UIControlState.Normal)
-        checkboxBtn2.setBackgroundImage(UIImage(named: "checkbox0"), forState: UIControlState.Normal)
-        
-        
         let str1 = "I’ve read and agree to the terms of \nservice"
         let attributes1 = [NSForegroundColorAttributeName: UIColor.blackColor(),
             NSFontAttributeName: UIFont.systemFontOfSize(17)]
-        self.termsLabel.attributedText = NSAttributedString(string: str1, attributes: attributes1)
+        termsLabel.attributedText = NSAttributedString(string: str1, attributes: attributes1)
         
         let handler1 = {
             (hyperLabel: FRHyperLabel!, substring: String!) -> Void in
@@ -41,14 +37,13 @@ class PolicyViewController: UIViewController {
             //action here
             UIApplication.sharedApplication().openURL(NSURL(string: "https://www.onepointsixseconds.com/terms-hr")!)
         }
-        self.termsLabel.setLinksForSubstrings(["terms of \nservice"], withLinkHandler: handler1)
+        termsLabel.setLinksForSubstrings(["terms of \nservice"], withLinkHandler: handler1)
 
 
-        
         let str2 = "I’ve read and agree to the privacy \npolicy"
         let attributes2 = [NSForegroundColorAttributeName: UIColor.blackColor(),
             NSFontAttributeName: UIFont.systemFontOfSize(17)]
-        self.policyLabel.attributedText = NSAttributedString(string: str2, attributes: attributes2)
+        policyLabel.attributedText = NSAttributedString(string: str2, attributes: attributes2)
         
         let handler2 = {
             (hyperLabel: FRHyperLabel!, substring: String!) -> Void in
@@ -56,11 +51,7 @@ class PolicyViewController: UIViewController {
             //action here
             UIApplication.sharedApplication().openURL(NSURL(string: "https://www.onepointsixseconds.com/privacy-policy-hr")!)
         }
-        self.policyLabel.setLinksForSubstrings(["privacy \npolicy"], withLinkHandler: handler2)
-        
-        self.redTermsLabel.hidden = true
-        self.redPolicyLabel.hidden = true
-        
+        policyLabel.setLinksForSubstrings(["privacy \npolicy"], withLinkHandler: handler2)
     }
 
     override func didReceiveMemoryWarning() {
@@ -68,6 +59,11 @@ class PolicyViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        
+    }
 
     /*
     // MARK: - Navigation
@@ -80,44 +76,28 @@ class PolicyViewController: UIViewController {
     */
     
     @IBAction func onCheckBox(sender: UIButton) {
-        if (sender.selected == true)
+        if (sender.selected)
         {
             sender.setBackgroundImage(UIImage(named: "checkbox0"), forState: UIControlState.Normal)
-            sender.selected = false;
         }
         else
         {
             sender.setBackgroundImage(UIImage(named: "checkbox1"), forState: UIControlState.Normal)
-            sender.selected = true;
         }
-
+        
+        sender.selected = !sender.selected
     }
     
     @IBAction func onNext(sender: UIButton) {
+        redTermsLabel.hidden = checkboxBtn1.selected
+        redPolicyLabel.hidden = checkboxBtn2.selected
         
-        if (self.checkboxBtn1.selected == false) {
-            self.redTermsLabel.hidden = false
-        }
-        else {
-            self.redTermsLabel.hidden = true
-        }
-        
-        if (self.checkboxBtn2.selected == false) {
-            self.redPolicyLabel.hidden = false
-        }
-        else {
-            self.redPolicyLabel.hidden = true
-        }
-        
-        if (self.checkboxBtn1.selected == true && self.checkboxBtn2.selected == true) {
+        if (checkboxBtn1.selected && checkboxBtn2.selected) {
             print("Next")
         }
     }
 
-
     @IBAction func onPrevious(sender: UIButton) {
-        
         navigationController!.popViewControllerAnimated(true)
-
     }
 }

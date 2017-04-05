@@ -403,6 +403,7 @@ notifications</string>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="xsM-pd-iqf" secondAttribute="height" multiplier="1:1" id="SQ6-RX-2Qi"/>
                                         </constraints>
+                                        <state key="normal" backgroundImage="checkbox0"/>
                                         <connections>
                                             <action selector="onCheckBox:" destination="iWr-Jc-6j6" eventType="touchUpInside" id="VsX-8y-506"/>
                                         </connections>
@@ -416,7 +417,7 @@ notifications</string>
                                             <userDefinedRuntimeAttribute type="boolean" keyPath="adjustsFontSizeToFitWidth" value="YES"/>
                                         </userDefinedRuntimeAttributes>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fxg-W5-Juu">
+                                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fxg-W5-Juu">
                                         <rect key="frame" x="63" y="351" width="281" height="34"/>
                                         <string key="text">You have to agree to the terms of service to 
 continue</string>
@@ -432,6 +433,7 @@ continue</string>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="r4f-e6-XP0" secondAttribute="height" multiplier="1:1" id="EZJ-F1-lN9"/>
                                         </constraints>
+                                        <state key="normal" backgroundImage="checkbox0"/>
                                         <state key="selected" image="checkbox1"/>
                                         <connections>
                                             <action selector="onCheckBox:" destination="iWr-Jc-6j6" eventType="touchUpInside" id="zhl-0f-XQl"/>
@@ -446,7 +448,7 @@ continue</string>
                                             <userDefinedRuntimeAttribute type="boolean" keyPath="adjustsFontSizeToFitWidth" value="YES"/>
                                         </userDefinedRuntimeAttributes>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dh5-8h-aDq">
+                                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dh5-8h-aDq">
                                         <rect key="frame" x="63" y="451" width="263" height="34"/>
                                         <string key="text">You have to agree to the privacy policy to 
 continue</string>
@@ -577,6 +579,7 @@ continue</string>
         <image name="LogoImage" width="151" height="151"/>
         <image name="NotificationImage" width="182" height="182"/>
         <image name="SmallLogoImage" width="45" height="45"/>
+        <image name="checkbox0" width="20" height="20"/>
         <image name="checkbox1" width="20" height="20"/>
         <image name="sdworkxImage" width="199" height="154"/>
     </resources>
