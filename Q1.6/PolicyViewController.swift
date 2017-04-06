@@ -26,7 +26,7 @@ class PolicyViewController: UIViewController {
 
         // Do any additional setup after loading the view.
         
-        let str1 = "I’ve read and agree to the terms of \nservice"
+        let str1 = "I’ve read and agree to the terms of service"
         let attributes1 = [NSForegroundColorAttributeName: UIColor.blackColor(),
             NSFontAttributeName: UIFont.systemFontOfSize(17)]
         termsLabel.attributedText = NSAttributedString(string: str1, attributes: attributes1)
@@ -37,10 +37,10 @@ class PolicyViewController: UIViewController {
             //action here
             UIApplication.sharedApplication().openURL(NSURL(string: "https://www.onepointsixseconds.com/terms-hr")!)
         }
-        termsLabel.setLinksForSubstrings(["terms of \nservice"], withLinkHandler: handler1)
+        termsLabel.setLinksForSubstrings(["terms of service"], withLinkHandler: handler1)
 
 
-        let str2 = "I’ve read and agree to the privacy \npolicy"
+        let str2 = "I’ve read and agree to the privacy policy"
         let attributes2 = [NSForegroundColorAttributeName: UIColor.blackColor(),
             NSFontAttributeName: UIFont.systemFontOfSize(17)]
         policyLabel.attributedText = NSAttributedString(string: str2, attributes: attributes2)
@@ -51,7 +51,7 @@ class PolicyViewController: UIViewController {
             //action here
             UIApplication.sharedApplication().openURL(NSURL(string: "https://www.onepointsixseconds.com/privacy-policy-hr")!)
         }
-        policyLabel.setLinksForSubstrings(["privacy \npolicy"], withLinkHandler: handler2)
+        policyLabel.setLinksForSubstrings(["privacy policy"], withLinkHandler: handler2)
     }
 
     override func didReceiveMemoryWarning() {
