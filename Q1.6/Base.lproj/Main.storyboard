@@ -386,12 +386,78 @@ Cg
                                             <constraint firstAttribute="width" secondItem="nYJ-g8-sHa" secondAttribute="height" multiplier="1:1" id="uOq-a9-lx6"/>
                                         </constraints>
                                     </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sdworkxImage" translatesAutoresizingMaskIntoConstraints="NO" id="hYS-9i-VhP">
-                                        <rect key="frame" x="83" y="177" width="208" height="161"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="24q-NG-21B">
+                                        <rect key="frame" x="31" y="100" width="185" height="49"/>
+                                        <attributedString key="attributedText">
+                                            <fragment content="You’re about to">
+                                                <attributes>
+                                                    <color key="NSColor" red="0.41176470588235292" green="0.41176470588235292" blue="0.41176470588235292" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <font key="NSFont" size="21" name="HelveticaNeue"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment>
+                                                <string key="content" base64-UTF8="YES">
+Cg
+</string>
+                                                <attributes>
+                                                    <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <font key="NSFont" size="21" name="HelveticaNeue"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content="subscribe to">
+                                                <attributes>
+                                                    <color key="NSColor" red="0.45490196078431372" green="0.70196078431372544" blue="0.82352941176470584" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <font key="NSFont" size="21" name="HelveticaNeue"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="adjustsFontSizeToFitWidth" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </label>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ozj-Ny-6x2">
+                                        <rect key="frame" x="127" y="170" width="120" height="120"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="sdworkx" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bhA-Tf-STW">
+                                                <rect key="frame" x="18" y="50" width="84" height="21"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="adjustsFontSizeToFitWidth" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.96470588235294119" green="0.96470588235294119" blue="0.96470588235294119" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" secondItem="hYS-9i-VhP" secondAttribute="height" multiplier="1.292" id="QzM-bM-pGe"/>
+                                            <constraint firstItem="bhA-Tf-STW" firstAttribute="centerY" secondItem="ozj-Ny-6x2" secondAttribute="centerY" id="Brm-rR-E88"/>
+                                            <constraint firstItem="bhA-Tf-STW" firstAttribute="width" secondItem="ozj-Ny-6x2" secondAttribute="width" multiplier="0.7" id="Lsa-Jj-E5v"/>
+                                            <constraint firstItem="bhA-Tf-STW" firstAttribute="centerX" secondItem="ozj-Ny-6x2" secondAttribute="centerX" id="YHg-ww-fnR"/>
+                                            <constraint firstAttribute="width" secondItem="ozj-Ny-6x2" secondAttribute="height" multiplier="1:1" id="kwH-0S-Yom"/>
                                         </constraints>
-                                    </imageView>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" alpha="0.69999998807907104" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Employee Pulse KMO" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sft-Mc-adQ">
+                                        <rect key="frame" x="56" y="300" width="262" height="26"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="adjustsFontSizeToFitWidth" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </label>
+                                    <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T0o-on-YHJ" customClass="FRHyperLabel">
+                                        <rect key="frame" x="63" y="350" width="281" height="0.0"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="adjustsFontSizeToFitWidth" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xsM-pd-iqf" userLabel="checkbox_top">
                                         <rect key="frame" x="32" y="355" width="21" height="21"/>
                                         <constraints>
@@ -402,21 +468,21 @@ Cg
                                             <action selector="onCheckBox:" destination="iWr-Jc-6j6" eventType="touchUpInside" id="VsX-8y-506"/>
                                         </connections>
                                     </button>
-                                    <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T0o-on-YHJ" customClass="FRHyperLabel">
-                                        <rect key="frame" x="63" y="350" width="281" height="0.0"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                        <nil key="highlightedColor"/>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="boolean" keyPath="adjustsFontSizeToFitWidth" value="YES"/>
-                                        </userDefinedRuntimeAttributes>
-                                    </label>
                                     <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fxg-W5-Juu">
                                         <rect key="frame" x="63" y="351" width="281" height="34"/>
                                         <string key="text">You have to agree to the terms of service to 
 continue</string>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <color key="textColor" red="0.81568627449999997" green="0.0039215686269999999" blue="0.1058823529" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="adjustsFontSizeToFitWidth" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </label>
+                                    <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="so2-Kz-CNH" customClass="FRHyperLabel">
+                                        <rect key="frame" x="63" y="450" width="281" height="0.0"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="boolean" keyPath="adjustsFontSizeToFitWidth" value="YES"/>
@@ -433,15 +499,6 @@ continue</string>
                                             <action selector="onCheckBox:" destination="iWr-Jc-6j6" eventType="touchUpInside" id="zhl-0f-XQl"/>
                                         </connections>
                                     </button>
-                                    <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="so2-Kz-CNH" customClass="FRHyperLabel">
-                                        <rect key="frame" x="63" y="450" width="281" height="0.0"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                        <nil key="highlightedColor"/>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="boolean" keyPath="adjustsFontSizeToFitWidth" value="YES"/>
-                                        </userDefinedRuntimeAttributes>
-                                    </label>
                                     <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dh5-8h-aDq">
                                         <rect key="frame" x="63" y="451" width="263" height="34"/>
                                         <string key="text">You have to agree to the privacy policy to 
@@ -485,43 +542,11 @@ continue</string>
                                             <action selector="onPrevious:" destination="iWr-Jc-6j6" eventType="touchUpInside" id="O8q-z0-ctI"/>
                                         </connections>
                                     </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="24q-NG-21B">
-                                        <rect key="frame" x="31" y="100" width="185" height="49"/>
-                                        <attributedString key="attributedText">
-                                            <fragment content="You’re about to">
-                                                <attributes>
-                                                    <color key="NSColor" red="0.41176470588235292" green="0.41176470588235292" blue="0.41176470588235292" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <font key="NSFont" size="21" name="HelveticaNeue"/>
-                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                </attributes>
-                                            </fragment>
-                                            <fragment>
-                                                <string key="content" base64-UTF8="YES">
-Cg
-</string>
-                                                <attributes>
-                                                    <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <font key="NSFont" size="21" name="HelveticaNeue"/>
-                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                </attributes>
-                                            </fragment>
-                                            <fragment content="subscribe to">
-                                                <attributes>
-                                                    <color key="NSColor" red="0.45490196078431372" green="0.70196078431372544" blue="0.82352941176470584" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <font key="NSFont" size="21" name="HelveticaNeue"/>
-                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                </attributes>
-                                            </fragment>
-                                        </attributedString>
-                                        <nil key="highlightedColor"/>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="boolean" keyPath="adjustsFontSizeToFitWidth" value="YES"/>
-                                        </userDefinedRuntimeAttributes>
-                                    </label>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstItem="T0o-on-YHJ" firstAttribute="leading" secondItem="kAT-eo-nlQ" secondAttribute="trailing" multiplier="0.167" id="1Ea-Ge-Sr4"/>
+                                    <constraint firstItem="ozj-Ny-6x2" firstAttribute="centerX" secondItem="kAT-eo-nlQ" secondAttribute="centerX" id="6wk-DT-K3n"/>
                                     <constraint firstItem="r4f-e6-XP0" firstAttribute="leading" secondItem="kAT-eo-nlQ" secondAttribute="trailing" multiplier="0.083" id="7KL-Cz-bB7"/>
                                     <constraint firstItem="T0o-on-YHJ" firstAttribute="width" secondItem="kAT-eo-nlQ" secondAttribute="width" multiplier="0.75" id="BH7-ZE-ERQ"/>
                                     <constraint firstItem="Y7b-HT-hfS" firstAttribute="width" secondItem="kAT-eo-nlQ" secondAttribute="width" multiplier="0.833" id="BQB-72-2fB"/>
@@ -529,29 +554,31 @@ Cg
                                     <constraint firstItem="JgV-2U-CNh" firstAttribute="width" secondItem="kAT-eo-nlQ" secondAttribute="width" multiplier="0.833" id="DGF-DI-qeC"/>
                                     <constraint firstItem="dh5-8h-aDq" firstAttribute="leading" secondItem="kAT-eo-nlQ" secondAttribute="trailing" multiplier="0.167" id="FcZ-Kx-q3H"/>
                                     <constraint firstItem="dh5-8h-aDq" firstAttribute="top" secondItem="so2-Kz-CNH" secondAttribute="bottom" constant="1" id="Iap-XP-XjS"/>
-                                    <constraint firstItem="hYS-9i-VhP" firstAttribute="height" secondItem="kAT-eo-nlQ" secondAttribute="height" multiplier="0.241" id="L89-GJ-IHr"/>
+                                    <constraint firstItem="sft-Mc-adQ" firstAttribute="width" secondItem="kAT-eo-nlQ" secondAttribute="width" multiplier="0.7" id="Ivc-RR-QwD"/>
                                     <constraint firstItem="24q-NG-21B" firstAttribute="leading" secondItem="kAT-eo-nlQ" secondAttribute="trailing" multiplier="0.083" id="OQa-jO-JF8"/>
                                     <constraint firstItem="Fxg-W5-Juu" firstAttribute="leading" secondItem="kAT-eo-nlQ" secondAttribute="trailing" multiplier="0.167" id="Owj-Cs-uYh"/>
                                     <constraint firstItem="xsM-pd-iqf" firstAttribute="top" secondItem="T0o-on-YHJ" secondAttribute="top" constant="5" id="QLq-W0-dKd"/>
                                     <constraint firstItem="Fxg-W5-Juu" firstAttribute="width" secondItem="kAT-eo-nlQ" secondAttribute="width" multiplier="0.75" id="R5o-5T-m5f"/>
                                     <constraint firstItem="24q-NG-21B" firstAttribute="top" secondItem="kAT-eo-nlQ" secondAttribute="bottom" multiplier="0.15" id="SIu-ZG-clL"/>
+                                    <constraint firstItem="sft-Mc-adQ" firstAttribute="centerX" secondItem="kAT-eo-nlQ" secondAttribute="centerX" id="SYH-li-xoz"/>
                                     <constraint firstItem="so2-Kz-CNH" firstAttribute="top" secondItem="kAT-eo-nlQ" secondAttribute="bottom" multiplier="0.675" id="TOO-LX-JJ6"/>
                                     <constraint firstItem="xsM-pd-iqf" firstAttribute="leading" secondItem="kAT-eo-nlQ" secondAttribute="trailing" multiplier="0.083" id="UFS-hm-HAb"/>
-                                    <constraint firstItem="hYS-9i-VhP" firstAttribute="centerX" secondItem="kAT-eo-nlQ" secondAttribute="centerX" id="Up9-sJ-LM8"/>
                                     <constraint firstItem="Y7b-HT-hfS" firstAttribute="bottom" secondItem="kAT-eo-nlQ" secondAttribute="bottom" multiplier="0.994" id="UpF-Wp-NIJ"/>
                                     <constraint firstItem="JgV-2U-CNh" firstAttribute="bottom" secondItem="Y7b-HT-hfS" secondAttribute="top" id="WgN-Me-And"/>
                                     <constraint firstItem="nYJ-g8-sHa" firstAttribute="height" secondItem="kAT-eo-nlQ" secondAttribute="height" multiplier="0.07" id="Xh8-TX-BsY"/>
                                     <constraint firstItem="24q-NG-21B" firstAttribute="width" secondItem="kAT-eo-nlQ" secondAttribute="width" multiplier="0.494" id="ZKK-90-o1P"/>
                                     <constraint firstItem="r4f-e6-XP0" firstAttribute="top" secondItem="so2-Kz-CNH" secondAttribute="top" constant="5" id="aSk-Au-AeL"/>
                                     <constraint firstItem="so2-Kz-CNH" firstAttribute="leading" secondItem="kAT-eo-nlQ" secondAttribute="trailing" multiplier="0.167" id="bOE-by-JwU"/>
-                                    <constraint firstItem="hYS-9i-VhP" firstAttribute="top" secondItem="kAT-eo-nlQ" secondAttribute="bottom" multiplier="0.265" id="frO-yR-5Sy"/>
+                                    <constraint firstItem="sft-Mc-adQ" firstAttribute="top" secondItem="kAT-eo-nlQ" secondAttribute="bottom" multiplier="0.45" id="beK-Ip-7cm"/>
                                     <constraint firstItem="Y7b-HT-hfS" firstAttribute="centerX" secondItem="kAT-eo-nlQ" secondAttribute="centerX" id="isF-Xl-GNf"/>
                                     <constraint firstItem="nYJ-g8-sHa" firstAttribute="leading" secondItem="kAT-eo-nlQ" secondAttribute="trailing" multiplier="0.083" id="lC6-nf-q46"/>
+                                    <constraint firstItem="ozj-Ny-6x2" firstAttribute="top" secondItem="kAT-eo-nlQ" secondAttribute="bottom" multiplier="0.255" id="pq8-wr-ArR"/>
                                     <constraint firstItem="nYJ-g8-sHa" firstAttribute="top" secondItem="kAT-eo-nlQ" secondAttribute="bottom" multiplier="0.06" id="ry7-Uj-PlY"/>
                                     <constraint firstItem="Fxg-W5-Juu" firstAttribute="top" secondItem="T0o-on-YHJ" secondAttribute="bottom" constant="1" id="sIN-8z-dBm"/>
                                     <constraint firstItem="xsM-pd-iqf" firstAttribute="height" secondItem="kAT-eo-nlQ" secondAttribute="height" multiplier="0.031" id="sb3-aK-dMZ"/>
                                     <constraint firstItem="r4f-e6-XP0" firstAttribute="height" secondItem="kAT-eo-nlQ" secondAttribute="height" multiplier="0.031" id="teu-EJ-ECy"/>
                                     <constraint firstItem="T0o-on-YHJ" firstAttribute="top" secondItem="kAT-eo-nlQ" secondAttribute="bottom" multiplier="0.525" id="ubj-em-szy"/>
+                                    <constraint firstItem="ozj-Ny-6x2" firstAttribute="height" secondItem="kAT-eo-nlQ" secondAttribute="height" multiplier="0.18" id="x3A-LZ-zhQ"/>
                                     <constraint firstItem="so2-Kz-CNH" firstAttribute="width" secondItem="kAT-eo-nlQ" secondAttribute="width" multiplier="0.75" id="zRD-aC-OLs"/>
                                     <constraint firstItem="dh5-8h-aDq" firstAttribute="width" secondItem="kAT-eo-nlQ" secondAttribute="width" multiplier="0.7" id="zyz-jd-Fah"/>
                                 </constraints>
@@ -569,6 +596,7 @@ Cg
                     <connections>
                         <outlet property="checkboxBtn1" destination="xsM-pd-iqf" id="z3P-iv-e8r"/>
                         <outlet property="checkboxBtn2" destination="r4f-e6-XP0" id="KOM-5o-afL"/>
+                        <outlet property="circleView" destination="ozj-Ny-6x2" id="h81-9N-lK7"/>
                         <outlet property="policyLabel" destination="so2-Kz-CNH" id="Xrj-nQ-Z3R"/>
                         <outlet property="redPolicyLabel" destination="dh5-8h-aDq" id="XgZ-gz-wGt"/>
                         <outlet property="redTermsLabel" destination="Fxg-W5-Juu" id="Rpy-rZ-pfI"/>
@@ -605,6 +633,5 @@ Cg
         <image name="SmallLogoImage" width="45" height="45"/>
         <image name="checkbox0" width="20" height="20"/>
         <image name="checkbox1" width="20" height="20"/>
-        <image name="sdworkxImage" width="199" height="154"/>
     </resources>
 </document>

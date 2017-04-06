@@ -11,9 +11,10 @@ import FRHyperLabel
 
 class PolicyViewController: UIViewController {
     
+    @IBOutlet weak var circleView: UIView!
+    
     @IBOutlet weak var checkboxBtn1: UIButton!
     @IBOutlet weak var checkboxBtn2: UIButton!
-
     
     @IBOutlet weak var termsLabel: FRHyperLabel!
     @IBOutlet weak var policyLabel: FRHyperLabel!
@@ -25,6 +26,10 @@ class PolicyViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+        circleView.layer.borderColor = UIColor(red: 217 / 255, green: 217 / 255, blue: 217 / 255, alpha: 1).CGColor
+        circleView.layer.borderWidth = 1.0
+        circleView.layer.cornerRadius = UIScreen.mainScreen().bounds.height * 0.09
         
         let str1 = "I’ve read and agree to the terms of service"
         let attributes1 = [NSForegroundColorAttributeName: UIColor.blackColor(),
